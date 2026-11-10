@@ -1,0 +1,43 @@
+[
+  {
+    "id": 1,
+    "name": "Mechanical Keyboard RGB",
+    "category": "Accessories",
+    "price": 750000,
+    "stock": 25,
+    "description": "Keyboard mekanikal wireless dengan switch tactile dan lampu RGB."
+  },
+  {
+    "id": 2,
+    "name": "Wireless Gaming Mouse",
+    "category": "Accessories",
+    "price": 450000,
+    "stock": 40,
+    "description": "Mouse gaming ringan dengan sensor optik presisi tinggi 16000 DPI."
+  },
+  {
+    "id": 3,
+    "name": "Monitor IPS 27 Inch 144Hz",
+    "category": "Monitor",
+    "price": 2850000,
+    "stock": 12,
+    "description": "Monitor gaming resolusi Full HD dengan refresh rate 144Hz dan panel IPS."
+  },
+  {
+    "id": 4,
+    "name": "USB-C Hub 7-in-1",
+    "category": "Converter",
+    "price": 250000,
+    "stock": 50,
+    "description": "Adapter USB-C dengan port HDMI 4K, USB 3.0, SD Card Reader, dan PD Charging."
+  },
+  {
+    "id": 5,
+    "name": "Noise Cancelling Headphones",
+    "category": "Audio",
+    "price": 1200000,
+    "stock": 18,
+    "description": "Headphone Bluetooth over-ear dengan fitur Active Noise Cancellation (ANC)."
+  }
+]
+

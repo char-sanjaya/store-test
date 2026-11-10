@@ -1,0 +1,19 @@
+{
+  "name": "rest-api-vercel-json",
+  "version": "1.0.0",
+  "description": "Simple REST API with JSON data & Swagger UI ready for Vercel deployment",
+  "main": "api/index.js",
+  "scripts": {
+    "start": "node api/index.js",
+    "dev": "node --watch api/index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "engines": {
+    "node": ">=18.x"
+  }
+}
+
