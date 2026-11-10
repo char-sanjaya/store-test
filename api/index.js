@@ -216,9 +216,20 @@ const swaggerOptions = {
 
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument, swaggerOptions));
 
-// Endpoint spesifikasi OpenAPI mentah
+// Endpoint spesifikasi OpenAPI mentah (otomatis mengisi URL server penuh agar langsung kompatibel dengan Axway API Manager)
 app.get('/api-docs.json', (req, res) => {
-  res.json(swaggerDocument);
+  const protocol = req.headers['x-forwarded-proto'] || req.protocol || 'https';
+  const host = req.headers['x-forwarded-host'] || req.get('host');
+  const dynamicSpec = {
+    ...swaggerDocument,
+    servers: [
+      {
+        url: `${protocol}://${host}`,
+        description: 'Backend Server (Vercel)'
+      }
+    ]
+  };
+  res.json(dynamicSpec);
 });
 
 // Root Endpoint
